@@ -61,6 +61,8 @@ step 1
 
         try exepctで実装するとどんなエラーが起きるかを真面目に考える気が無いように見える
         動かせるか確認してから動かすコードのほうが見やすさがある
+        headという変数名なら常にheadを指していてほしい
+        visited_nodesとしていたがNodeが自明ならvisitedでも通じる(seenと同じ理由)
 
 
 間違えたところ
@@ -68,6 +70,8 @@ step 1
     正しくはis not None条件はきちんと整理しておかないとエラーになる
     文章化しておきたい
     今回の場合なら、head.nextのポインターが存在するときにループを回すなので、is Noneとはならない
+
+
 """
 
 from typing import Optional
